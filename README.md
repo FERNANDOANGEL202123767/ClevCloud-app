@@ -104,6 +104,7 @@ El APK estará en `android/app/build/outputs/apk/release/`
 
 ## 🏗️ Estructura del Proyecto
 
+```plaintext
 ClevCloud-app/
 ├── src/
 │   ├── api/              # Servicios HTTP (Axios, endpoints)
@@ -122,6 +123,7 @@ ClevCloud-app/
 ├── ios/                  # Build nativo iOS
 ├── .env.example          # Template de variables
 └── package.json
+```
 
 ## 🔑 Características Técnicas
 
