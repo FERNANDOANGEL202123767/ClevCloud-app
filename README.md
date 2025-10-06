@@ -12,19 +12,19 @@ ClevCloud App transforma la supervisión de proyectos en una experiencia intuiti
 
 ## 📱 Demo
 
-![Inicio](./inicio.png)
+![Inicio](./inicio.jpg)
 
 >*Captura de Inicio*
 
-![Skeleton](./assets/skeleton.png)
+![Skeleton](./assets/skeleton.jpg)
 
 >*Captura de skeleton*
 
-![Datos](./assets/datos.png)
+![Datos](./assets/datos.jpg)
 
 >*Captura de Datos de la api especificando un usuario*
 
-![InfoDetallada](./asstes/info.png)
+![InfoDetallada](./asstes/info.jpg)
 
 >*Captura de Informacion Detallada*
 
