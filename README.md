@@ -1,97 +1,197 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ClevCloud App
 
-# Getting Started
+[![React Native](https://img.shields.io/badge/React%20Native-v0.74-green?logo=react)](https://reactnative.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v5.5-blue?logo=typescript)](https://www.typescriptlang.org)
+[![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-v2.0-purple?logo=redux)](https://redux-toolkit.js.org)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Una aplicación móvil robusta y escalable construida con React Native para la gestión eficiente de proyectos en CleverCloud. Permite a los técnicos visualizar, buscar y detallar proyectos en tiempo real, integrando datos de una API REST segura.
 
-## Step 1: Start Metro
+## 🚀 Visión General
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+ClevCloud App transforma la supervisión de proyectos en una experiencia intuitiva: desde un dashboard con búsqueda dinámica hasta vistas detalladas con barras de progreso y badges de estado. Soporta refresh pull-to-refresh, manejo de errores graceful y navegación stack nativa.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 📱 Demo
 
-```sh
-# Using npm
-npm start
+![Inicio](./assets/inicio.png)
 
-# OR using Yarn
-yarn start
-```
+>*Captura de Inicio*
 
-## Step 2: Build and run your app
+![Skeleton](./assets/skeleton.png)
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+>*Captura de skeleton*
 
-### Android
+![Datos](./assets/datos.png)
 
-```sh
-# Using npm
-npm run android
+>*Captura de Datos de la api especificando un usuario*
 
-# OR using Yarn
-yarn android
-```
+![InfoDetallada](./asstes/info.png)
 
-### iOS
+>*Captura de Informacion Detallada*
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## ✨ Características Principales
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+- **Listado Dinámico** - Visualización de proyectos con filtros en tiempo real por nombre, cliente o estado
+- **Búsqueda** - Filtrado client-side con debounce para queries rápidas
+- **Detalles Enriquecidos** - Vistas modales con progreso visual, fechas formateadas y metadatos técnicos
+- **Manejo de Estados** - Loading spinners, errores con retry y empty states contextuales
+- **UI Consistente** - Tema centralizado con colores, espaciado y tipografía unificada
+- **Offline-Ready** - Cacheo básico vía Redux, expansible a AsyncStorage
+- **Seguridad** - Tokens de API en variables de entorno con interceptors para logging
 
-```sh
-bundle install
-```
+## 🛠️ Stack Tecnológico
 
-Then, and every time you update your native dependencies, run:
+| Categoría | Tecnologías |
+|-----------|-------------|
+| **Framework** | React Native (Bare Workflow) |
+| **Lenguaje** | TypeScript (Full Typing) |
+| **Estado** | Redux Toolkit + RTK Query |
+| **Navegación** | React Navigation (Native Stack) |
+| **HTTP** | Axios con Interceptors |
+| **UI/UX** | React Native Elements + Componentes Custom |
+| **Herramientas** | ESLint, Prettier, Babel |
 
-```sh
-bundle exec pod install
-```
+## 📦 Prerrequisitos
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- **Node.js** ≥ 18.x
+- **React Native CLI**: `npm install -g @react-native-community/cli`
+- **Android Studio** (SDK ≥ 34) o **Xcode** (≥ 15)
+- Variables de entorno configuradas (ver `.env.example`)
 
-```sh
-# Using npm
-npm run ios
+## 🚀 Instalación
 
-# OR using Yarn
-yarn ios
-```
+### 1. Clonar el Repositorio
+bash
+git clone https://github.com/FERNANDOANGEL202123767/ClevCloud-app.git
+cd ClevCloud-app
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### 2. Instalar Dependencias
+bash
+npm install
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### 3. Configurar Variables de Entorno
+Copia el archivo de ejemplo y configura tus credenciales:
 
-## Step 3: Modify your app
+bash
+cp .env.example .env
 
-Now that you have successfully run the app, let's make changes!
+Edita `.env` con tus datos:
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+env
+API_BASE_URL=https://dev.clevertechnology.com.mx/dev/ramiro/clevercloud/api/public
+API_TOKEN=tu-token-seguro-aqui
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+### 4. Ejecutar la Aplicación
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+**Android:**
 
-## Congratulations! :tada:
+bash
+npx react-native run-android
 
-You've successfully run and modified your React Native App. :partying_face:
+**Metro Bundler:**
 
-### Now what?
+bash
+npx react-native start
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## 📱 Build para Producción
 
-# Troubleshooting
+### Android APK
+bash
+cd android
+./gradlew assembleRelease
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+El APK estará en `android/app/build/outputs/apk/release/`
 
-# Learn More
 
-To learn more about React Native, take a look at the following resources:
+## 🏗️ Estructura del Proyecto
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+ClevCloud-app/
+├── src/
+│   ├── api/              # Servicios HTTP (Axios, endpoints)
+│   ├── assets/           # Recursos estáticos (imágenes, fonts)
+│   ├── components/       # Componentes reutilizables
+│   │   ├── common/       # Card, Badge, Button
+│   │   └── specific/     # ProjectCard, ProjectList
+│   ├── config/           # Constantes y theme
+│   ├── hooks/            # Custom hooks (useProjects, useAnimation)
+│   ├── navigation/       # Stack Navigator
+│   ├── screens/          # Pantallas (Home, ProjectDetail)
+│   ├── store/            # Redux slices y store
+│   ├── types/            # Interfaces TypeScript
+│   └── utils/            # Helpers (formatters, validators)
+├── android/              # Build nativo Android
+├── ios/                  # Build nativo iOS
+├── .env.example          # Template de variables
+└── package.json
+
+## 🔑 Características Técnicas
+
+### Arquitectura
+
+- **Clean Architecture**: Separación clara entre capas (UI, dominio, datos)
+- **Component-Based**: Componentes reutilizables y modulares
+- **State Management**: Redux Toolkit para estado global predecible
+- **Type Safety**: TypeScript en toda la aplicación
+
+### Performance
+
+- Lazy loading de componentes pesados
+- Memoización con `React.memo` y `useMemo`
+- Optimización de listas con `FlatList` y `keyExtractor`
+- Debouncing en búsquedas
+
+### Seguridad
+
+- Tokens de API en variables de entorno
+- Validación de datos de entrada
+- Manejo seguro de credenciales
+- HTTPS para todas las peticiones
+
+## 🤝 Contribuir
+
+Las contribuciones son bienvenidas. Para cambios importantes:
+
+1. Fork el proyecto
+2. Crea una feature branch (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'feat: añadir nueva funcionalidad'`)
+4. Push a la branch (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+### Convenciones de Código
+
+- Usa **Conventional Commits** para mensajes
+- Ejecuta `npm run lint` antes de hacer commit
+- Mantén la cobertura de tests
+- Documenta funciones complejas
+
+## 📝 Scripts Disponibles
+
+bash
+npm start           # Inicia Metro Bundler
+npm run android     # Ejecuta en Android
+npm test            # Ejecuta tests
+
+## 🐛 Solución de Problemas
+
+### La app no se conecta a la API
+
+- Verifica que `.env` tenga las credenciales correctas
+- Confirma que la URL base no tenga espacios o caracteres extra
+- Revisa que el token sea válido
+
+### Errores de build en Android
+
+bash
+cd android
+gradlew clean
+cd ..
+npx react-native run-android
+
+## 📞 Contacto
+
+**Fernando Ángel** - Desarrollador Full-Stack
+
+- GitHub: [@FERNANDOANGEL202123767](https://github.com/FERNANDOANGEL202123767)
+- Proyecto: [ClevCloud App](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
+
+
+⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub
