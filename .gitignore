@@ -73,3 +73,26 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+# Dependencies
+*.log
+
+# Env
+.env
+.env.development
+.env.production
+
+# Builds
+android/app/build/
+ios/build/
+.expo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
