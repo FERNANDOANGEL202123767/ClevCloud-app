@@ -29,6 +29,10 @@ ClevCloud App transforma la supervisión de proyectos en una experiencia intuiti
 >*Captura de Informacion Detallada*
 
 ### Descargar APK (Android)
+![QR](./apk.jpg)
+
+>*Descarga por realse o QR*
+
 [Descargar clevCloud.apk](https://github.com/FERNANDOANGEL202123767/ClevCloud-app/releases/tag/V1)
 
 ## ✨ Características Principales
