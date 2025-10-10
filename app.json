@@ -1,8 +1,8 @@
 {
   "name": "ClevCloud",
-  "displayName": "VindGroup Projects",
+  "displayName": "ClevCloud",
   "expo": {
-    "name": "VindGroup Projects",
+    "name": "ClevCloud",
     "slug": "clevcloud",
     "version": "1.0.0",
     "orientation": "portrait",
