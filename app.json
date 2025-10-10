@@ -1,4 +1,30 @@
 {
   "name": "ClevCloud",
-  "displayName": "ClevCloud"
+  "displayName": "VindGroup Projects",
+  "expo": {
+    "name": "VindGroup Projects",
+    "slug": "clevcloud",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "splash": {
+      "image": "./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.clevcloud"
+    },
+    "android": {
+      "package": "com.clevcloud"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7ad75336-87a1-44f6-8bb7-ec5b7e7eddbf"
+      }
+    }
+  }
 }
