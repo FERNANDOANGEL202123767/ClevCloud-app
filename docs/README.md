@@ -1,4 +1,6 @@
-# 📱 ClevCloud App - Documentación Técnica
+# ClevCloud App - Documentación Técnica
+
+![Arquitectura General](images/logo.png)
 
 > Una aplicación móvil robusta y escalable construida con React Native para la gestión eficiente de proyectos en CleverCloud.
 
@@ -8,11 +10,11 @@
 
 ---
 
-## 🎯 Bienvenido
+## 𓆝 𓆟 Bienvenido 𓆝 𓆟 
 
 Esta documentación te guiará a través de la arquitectura, configuración e implementación de **ClevCloud App**. Diseñada para técnicos y desarrolladores que desean entender, mantener o extender la aplicación.
 
-## 🚀 Inicio Rápido
+## Inicio Rápido 𓅰 𓅬 𓅭 𓅮 𓅯
 
 ```bash
 # Clonar el repositorio
@@ -28,7 +30,7 @@ cp .env.example .env
 npx react-native run-android
 ```
 
-## 📚 Contenido de la Documentación
+## Contenido de la Documentación 🈷
 
 ### **Guías de Inicio**
 - [**Introducción**](1.Introduccion.md) - Visión general del proyecto
@@ -48,16 +50,16 @@ npx react-native run-android
 
 ---
 
-## ✨ Características Principales
+## ・┆✦ʚ Características Principales ɞ✦ ┆・
 
-- ✅ **Listado Dinámico** - Visualización de proyectos con filtros en tiempo real
-- 🔍 **Búsqueda Inteligente** - Filtrado client-side con debounce
-- 📊 **Detalles Enriquecidos** - Vistas modales con progreso visual
-- ⚡ **Manejo de Estados** - Loading, errores y empty states
-- 🎨 **UI Consistente** - Tema centralizado y componentes reutilizables
-- 🔒 **Seguridad** - Tokens de API y variables de entorno
+- **Listado Dinámico** - Visualización de proyectos con filtros en tiempo real
+- **Búsqueda Inteligente** - Filtrado client-side con debounce
+- **Detalles Enriquecidos** - Vistas modales con progreso visual
+- **Manejo de Estados** - Loading, errores y empty states
+- **UI Consistente** - Tema centralizado y componentes reutilizables
+- **Seguridad** - Tokens de API y variables de entorno
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico ˗ˏˋ 𓅰 ˎˊ˗
 
 | Categoría | Tecnología |
 |-----------|------------|
@@ -68,7 +70,7 @@ npx react-native run-android
 | HTTP | Axios |
 | UI | React Native Elements |
 
-## 📸 Capturas de Pantalla
+## Capturas de Pantalla [◉°]
 
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
   <img src="images/inicio.jpg" alt="Inicio" width="200">
@@ -77,13 +79,13 @@ npx react-native run-android
   <img src="images/info.jpg" alt="Detalle" width="200">
 </div>
 
-## 📱 Descargas
+## Descargas ˖⏱
 
 [![Descargar APK](https://img.shields.io/badge/Descargar-APK%20v1.0-brightgreen?style=for-the-badge&logo=android)](https://github.com/FERNANDOANGEL202123767/ClevCloud-app/releases/tag/V1)
 
 ![QR](images/apk.jpg)
 
-## 🤝 Contribuir
+## Contribuir 🌪
 
 ¿Encontraste un bug o tienes una sugerencia? 
 
@@ -93,15 +95,15 @@ npx react-native run-android
 4. Push a la branch (`git push origin feature/mejora`)
 5. Abre un Pull Request
 
-## 📞 Contacto
+## Contacto ☏
 
 **Fernando Ángel** - Desarrollador Full-Stack
 
-- 💻 GitHub: [@FERNANDOANGEL202123767](https://github.com/FERNANDOANGEL202123767)
-- 📦 Repositorio: [ClevCloud App](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
+- ⚛ GitHub: [@FERNANDOANGEL202123767](https://github.com/FERNANDOANGEL202123767)
+- ⚛ Repositorio: [ClevCloud App](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
 
 ---
 
 <p align="center">
-  Hecho con ❤️ por Fernando Ángel
+  Hecho por Fernando Ángel 𓍊𓋼𓍊𓋼𓍊𓆏 𓍊𓋼𓍊𓋼𓍊
 </p>

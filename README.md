@@ -6,11 +6,11 @@
 
 Una aplicación móvil robusta y escalable construida con React Native para la gestión eficiente de proyectos en CleverCloud. Permite a los técnicos visualizar, buscar y detallar proyectos en tiempo real, integrando datos de una API REST segura.
 
-## 🚀 Visión General
+## Visión General
 
 ClevCloud App transforma la supervisión de proyectos en una experiencia intuitiva: desde un dashboard con búsqueda dinámica hasta vistas detalladas con barras de progreso y badges de estado. Soporta refresh pull-to-refresh, manejo de errores graceful y navegación stack nativa.
 
-## 📱 Demo
+## Demo
 
 ![Inicio](./src/assets/images/inicio.jpg)
 
@@ -35,9 +35,9 @@ ClevCloud App transforma la supervisión de proyectos en una experiencia intuiti
 
 [Descargar clevCloud.apk](https://github.com/FERNANDOANGEL202123767/ClevCloud-app/releases/tag/V1)
 
-## 📚 Documentación Completa
+## Documentación Completa
 
-**👉 [Ver Documentación Técnica Completa](https://fernandoangel202123767.github.io/ClevCloud-app/)**
+**[Ver Documentación Técnica Completa](https://fernandoangel202123767.github.io/ClevCloud-app/)**
 
 La documentación incluye:
 - Guías de instalación y configuración
@@ -46,7 +46,7 @@ La documentación incluye:
 - Historial de versiones
 - Guía de migración a Expo Go
 
-## ✨ Características Principales
+## Características Principales
 
 - **Listado Dinámico** - Visualización de proyectos con filtros en tiempo real por nombre, cliente o estado
 - **Búsqueda** - Filtrado client-side con debounce para queries rápidas
@@ -56,7 +56,7 @@ La documentación incluye:
 - **Offline-Ready** - Cacheo básico vía Redux, expansible a AsyncStorage
 - **Seguridad** - Tokens de API en variables de entorno con interceptors para logging
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Categoría | Tecnologías |
 |-----------|-------------|
@@ -68,14 +68,14 @@ La documentación incluye:
 | **UI/UX** | React Native Elements + Componentes Custom |
 | **Herramientas** | ESLint, Prettier, Babel |
 
-## 📦 Prerrequisitos
+## Prerrequisitos
 
 - **Node.js** ≥ 18.x
 - **React Native CLI**: `npm install -g @react-native-community/cli`
 - **Android Studio** (SDK ≥ 34) o **Xcode** (≥ 15)
 - Variables de entorno configuradas (ver `.env.example`)
 
-## 🚀 Instalación
+## Instalación
 
 ### 1. Clonar el Repositorio
 ```bash
@@ -116,7 +116,7 @@ npx react-native run-android
 npx react-native start
 ```
 
-## 📱 Build para Producción
+## Build para Producción
 
 ### Android APK
 ```bash
@@ -126,7 +126,7 @@ cd android
 
 El APK estará en `android/app/build/outputs/apk/release/`
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```plaintext
 ClevCloud-app/
@@ -151,7 +151,7 @@ ClevCloud-app/
 └── package.json
 ```
 
-## 🔑 Características Técnicas
+## Características Técnicas
 
 ### Arquitectura
 
@@ -174,7 +174,7 @@ ClevCloud-app/
 - Manejo seguro de credenciales
 - HTTPS para todas las peticiones
 
-## 🤝 Contribuir
+## Contribuir
 
 Las contribuciones son bienvenidas. Para cambios importantes:
 
@@ -191,7 +191,7 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 - Mantén la cobertura de tests
 - Documenta funciones complejas
 
-## 📝 Scripts Disponibles
+## Scripts Disponibles
 
 ```bash
 npm start           # Inicia Metro Bundler
@@ -199,7 +199,7 @@ npm run android     # Ejecuta en Android
 npm test            # Ejecuta tests
 ```
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### La app no se conecta a la API
 
@@ -216,7 +216,7 @@ cd ..
 npx react-native run-android
 ```
 
-## 📞 Contacto
+## Contacto
 
 **Fernando Ángel** - Desarrollador Full-Stack
 
@@ -225,4 +225,5 @@ npx react-native run-android
 
 ---
 
-⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub
+Si este proyecto te fue útil, considera darle una estrella en GitHub 
+ ദ്ദി(ᵔᗜᵔ)◝(ᵔᵕᵔ)◜
