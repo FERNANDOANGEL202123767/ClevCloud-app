@@ -16,7 +16,7 @@
 
 * **📝 Versiones & Migraciones**
   * [7. Historial de Versiones](7.Historial-de-Versiones.md)
-  * [8. Migración a Expo Go](8.Migracion-Expo-Go-Guia-completa.md)
+  * [8. Migración a Expo Go](8.Migracion-Expo-Go-Guia-Completa.md)
 
 * **🔗 Enlaces**
   * [📦 GitHub](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
