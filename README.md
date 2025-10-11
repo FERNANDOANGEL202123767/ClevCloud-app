@@ -12,28 +12,39 @@ ClevCloud App transforma la supervisión de proyectos en una experiencia intuiti
 
 ## 📱 Demo
 
-![Inicio](./inicio.jpg)
+![Inicio](./src/assets/images/inicio.jpg)
 
 >*Captura de Inicio*
 
-![Skeleton](./skeleton.jpg)
+![Skeleton](./src/assets/images/skeleton.jpg)
 
 >*Captura de skeleton*
 
-![Datos](./datos.jpg)
+![Datos](./src/assets/images/datos.jpg)
 
 >*Captura de Datos de la api especificando un usuario*
 
-![InfoDetallada](./info.jpg)
+![InfoDetallada](./src/assets/images/info.jpg)
 
 >*Captura de Informacion Detallada*
 
 ### Descargar APK (Android)
-![QR](./apk.jpg)
+![QR](./src/assets/images/apk.jpg)
 
 >*Descarga por releases o QR*
 
 [Descargar clevCloud.apk](https://github.com/FERNANDOANGEL202123767/ClevCloud-app/releases/tag/V1)
+
+## 📚 Documentación Completa
+
+**👉 [Ver Documentación Técnica Completa](https://fernandoangel202123767.github.io/ClevCloud-app/)**
+
+La documentación incluye:
+- Guías de instalación y configuración
+- Arquitectura del código (MVVM, flujos de datos)
+- API y servicios
+- Historial de versiones
+- Guía de migración a Expo Go
 
 ## ✨ Características Principales
 
@@ -67,47 +78,53 @@ ClevCloud App transforma la supervisión de proyectos en una experiencia intuiti
 ## 🚀 Instalación
 
 ### 1. Clonar el Repositorio
-bash
+```bash
 git clone https://github.com/FERNANDOANGEL202123767/ClevCloud-app.git
 cd ClevCloud-app
+```
 
 ### 2. Instalar Dependencias
-bash
+```bash
 npm install
+```
 
 ### 3. Configurar Variables de Entorno
 Copia el archivo de ejemplo y configura tus credenciales:
 
-bash
+```bash
 cp .env.example .env
+```
 
 Edita `.env` con tus datos:
 
-env
+```env
 API_BASE_URL=https://dev.clevertechnology.com.mx/dev/ramiro/clevercloud/api/public
 API_TOKEN=tu-token-seguro-aqui
+```
 
 ### 4. Ejecutar la Aplicación
 
 **Android:**
 
-bash
+```bash
 npx react-native run-android
+```
 
 **Metro Bundler:**
 
-bash
+```bash
 npx react-native start
+```
 
 ## 📱 Build para Producción
 
 ### Android APK
-bash
+```bash
 cd android
 ./gradlew assembleRelease
+```
 
 El APK estará en `android/app/build/outputs/apk/release/`
-
 
 ## 🏗️ Estructura del Proyecto
 
@@ -116,6 +133,7 @@ ClevCloud-app/
 ├── src/
 │   ├── api/              # Servicios HTTP (Axios, endpoints)
 │   ├── assets/           # Recursos estáticos (imágenes, fonts)
+│   │   └── images/       # Imágenes de la app y documentación
 │   ├── components/       # Componentes reutilizables
 │   │   ├── common/       # Card, Badge, Button
 │   │   └── specific/     # ProjectCard, ProjectList
@@ -126,6 +144,7 @@ ClevCloud-app/
 │   ├── store/            # Redux slices y store
 │   ├── types/            # Interfaces TypeScript
 │   └── utils/            # Helpers (formatters, validators)
+├── docs/                 # Documentación Docsify
 ├── android/              # Build nativo Android
 ├── ios/                  # Build nativo iOS
 ├── .env.example          # Template de variables
@@ -174,10 +193,11 @@ Las contribuciones son bienvenidas. Para cambios importantes:
 
 ## 📝 Scripts Disponibles
 
-bash
+```bash
 npm start           # Inicia Metro Bundler
 npm run android     # Ejecuta en Android
 npm test            # Ejecuta tests
+```
 
 ## 🐛 Solución de Problemas
 
@@ -189,11 +209,12 @@ npm test            # Ejecuta tests
 
 ### Errores de build en Android
 
-bash
+```bash
 cd android
-gradlew clean
+./gradlew clean
 cd ..
 npx react-native run-android
+```
 
 ## 📞 Contacto
 
@@ -202,5 +223,6 @@ npx react-native run-android
 - GitHub: [@FERNANDOANGEL202123767](https://github.com/FERNANDOANGEL202123767)
 - Proyecto: [ClevCloud App](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
 
+---
 
 ⭐ Si este proyecto te fue útil, considera darle una estrella en GitHub

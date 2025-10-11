@@ -1,0 +1,23 @@
+<!-- docs/_sidebar.md -->
+
+* [🏠 Inicio](/)
+
+* **📖 Guías**
+  * [1. Introducción](1.Introduccion.md)
+  * [2. Estructura del Proyecto](2.Estructura-del-Proyecto.md)
+  * [3. Configuración del Entorno](3.Configuracion-del-Entorno.md)
+
+* **🏗️ Arquitectura**
+  * [4. Arquitectura del Código](4.Arquitectura-del-Codigo.md)
+  * [5. Documentación de Código](5.Documentacion-de-codigo.md)
+
+* **🔌 API & Servicios**
+  * [6. API y Servicios](6.Api-y-Servicios.md)
+
+* **📝 Versiones & Migraciones**
+  * [7. Historial de Versiones](7.Historial-de-Versiones.md)
+  * [8. Migración a Expo Go](8.Migracion-a-Expo-Go.md)
+
+* **🔗 Enlaces**
+  * [📦 GitHub](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
+  * [📱 Descargar APK](https://github.com/FERNANDOANGEL202123767/ClevCloud-app/releases/tag/V1)

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ClevCloud App - Documentación Técnica</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Documentación técnica completa de ClevCloud App - Gestión de proyectos con React Native, TypeScript y Redux Toolkit">
+  <meta name="keywords" content="React Native, TypeScript, Redux, Documentación, ClevCloud, Mobile App">
+  <meta name="author" content="Fernando Ángel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="ClevCloud App - Documentación">
+  <meta property="og:description" content="Documentación técnica completa para desarrolladores">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon (opcional, crea uno después) -->
+  <link rel="icon" href="images/inicio.jpg" type="image/jpeg">
+  
+  <!-- Theme: Vue (moderno y limpio) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      /* Colores personalizados de tu app */
+      --theme-color: #6366f1;
+      --theme-color-dark: #4f46e5;
+      --theme-color-light: #818cf8;
+    }
+    
+    /* Logo en el sidebar */
+    .app-name-link {
+      display: flex !important;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .app-name-link img {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    
+    /* Ancho máximo del contenido */
+    .markdown-section {
+      max-width: 900px;
+      padding: 30px 25px 40px;
+    }
+    
+    /* Estilo de imágenes */
+    .markdown-section img {
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    
+    .markdown-section img:hover {
+      transform: scale(1.02);
+    }
+    
+    /* Badges más bonitos */
+    .markdown-section img[alt*="shield"] {
+      box-shadow: none;
+      margin: 5px 2px;
+      border-radius: 4px;
+    }
+    
+    /* Tablas responsive */
+    .markdown-section table {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    /* Código inline */
+    .markdown-section code {
+      background-color: #f6f8fa;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    
+    /* Bloques de código */
+    .markdown-section pre > code {
+      padding: 16px;
+      border-radius: 6px;
+      font-size: 0.85em;
+      line-height: 1.6;
+    }
+    
+    /* Botón de copiar código */
+    .docsify-copy-code-button {
+      background: var(--theme-color) !important;
+      color: white !important;
+      border-radius: 4px !important;
+    }
+    
+    /* Links */
+    .markdown-section a {
+      color: var(--theme-color);
+      font-weight: 500;
+    }
+    
+    .markdown-section a:hover {
+      color: var(--theme-color-dark);
+      text-decoration: underline;
+    }
+    
+    /* Sidebar */
+    .sidebar {
+      background-color: #fafbfc;
+      border-right: 1px solid #e1e4e8;
+    }
+    
+    .sidebar-nav > ul > li > a {
+      font-weight: 600;
+      color: #24292e;
+    }
+    
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .markdown-section {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">⏳ Cargando documentación...</div>
+  
+  <script>
+    window.$docsify = {
+      // Nombre con logo
+      name: '<img src="images/inicio.jpg" alt="Logo" style="width:24px;height:24px;border-radius:4px;margin-right:8px;vertical-align:middle;">ClevCloud App',
+      
+      // Link al repositorio de GitHub
+      repo: 'https://github.com/FERNANDOANGEL202123767/ClevCloud-app',
+      
+      // Cargar sidebar personalizado
+      loadSidebar: true,
+      
+      // Alias para el sidebar (opcional)
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      
+      // Página de inicio personalizada
+      homepage: 'README.md',
+      
+      // Niveles de profundidad en el sidebar
+      subMaxLevel: 3,
+      
+      // Auto scroll al inicio al cambiar de página
+      auto2top: true,
+      
+      // Configuración de búsqueda
+      search: {
+        maxAge: 86400000, // Cache de 1 día
+        paths: 'auto',
+        placeholder: '🔍 Buscar en la documentación...',
+        noData: '😞 No se encontraron resultados',
+        depth: 6,
+        hideOtherSidebarContent: false
+      },
+      
+      // Paginación entre páginas
+      pagination: {
+        previousText: '← Anterior',
+        nextText: 'Siguiente →',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      
+      // Copiar código fácilmente
+      copyCode: {
+        buttonText: '📋 Copiar',
+        errorText: '❌ Error',
+        successText: '✅ Copiado'
+      },
+      
+      // Tabs para código
+      tabs: {
+        persist: true,
+        sync: true,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
+      },
+      
+      // Configuración del conteo de palabras/tiempo de lectura
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'spanish'
+      },
+      
+      // Footer personalizado
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            // Agregar fecha de última actualización
+            var footer = [
+              '<hr/>',
+              '<footer style="text-align: center; padding: 20px 0; color: #666;">',
+              '<p>📱 ClevCloud App - Documentación Técnica</p>',
+              '<p style="font-size: 0.9em;">',
+              'Hecho con ❤️ por <a href="https://github.com/FERNANDOANGEL202123767" target="_blank">Fernando Ángel</a>',
+              '</p>',
+              '<p style="font-size: 0.85em; color: #999;">',
+              'Última actualización: {docsify-updated}',
+              '</p>',
+              '</footer>'
+            ].join('');
+            
+            return html + footer;
+          });
+        }
+      ],
+      
+      // Formato de fecha
+      formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
+      
+      // Logo en portada (si usas coverpage)
+      // coverpage: true,
+      
+      // Ejecutar scripts externos
+      executeScript: true,
+      
+      // Notificación de actualización
+      notFoundPage: true
+    }
+  </script>
+  
+  <!-- Docsify Core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugin: Búsqueda -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!-- Plugin: Paginación -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  
+  <!-- Plugin: Copiar código -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  
+  <!-- Plugin: Tabs -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  
+  <!-- Plugin: Zoom para imágenes -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  
+  <!-- Plugin: Emoji -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  
+  <!-- Plugin: Links externos (abre en nueva pestaña) -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  
+  <!-- Resaltado de sintaxis para lenguajes específicos -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-jsx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-tsx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+  
+  <!-- Google Analytics (opcional - reemplaza con tu ID) -->
+  <!-- <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+</body>
+</html>
