@@ -9,10 +9,10 @@
 
 * **🏗️ Arquitectura**
   * [4. Arquitectura del Código](4.Arquitectura-del-Codigo.md)
-  * [5. Documentación de Código](5.Documentacion-de-codigo.md)
+  * [5. Documentación de Código](5.Documentacion-de-Codigo.md)
 
 * **🔌 API & Servicios**
-  * [6. API y Servicios](6.Api-Servicios.md)
+  * [6. API y Servicios](6.API-Servicios.md)
 
 * **📝 Versiones & Migraciones**
   * [7. Historial de Versiones](7.Historial-de-Versiones.md)
