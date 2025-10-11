@@ -39,14 +39,14 @@ npx react-native run-android
 
 ### **Arquitectura & Código**
 - [**Arquitectura del Código**](4.Arquitectura-del-Codigo.md) - Patrones de diseño y estructura
-- [**Documentación de Código**](5.Documentacion-de-codigo.md) - Convenciones y estándares
+- [**Documentación de Código**](5.Documentacion-de-Codigo.md) - Convenciones y estándares
 
 ### **Integración & APIs**
-- [**API y Servicios**](6.Api-y-Servicios.md) - Endpoints, autenticación y manejo de datos
+- [**API y Servicios**](6.API-Servicios.md) - Endpoints, autenticación y manejo de datos
 
 ### **Versiones & Migración**
 - [**Historial de Versiones**](7.Historial-de-Versiones.md) - Changelog completo
-- [**Migración a Expo Go**](8.Migracion-a-Expo-Go.md) - Guía paso a paso para migrar
+- [**Migración a Expo Go**](8.Migracion-Expo-Go-Guia-Completa.md) - Guía paso a paso para migrar
 
 ---
 
