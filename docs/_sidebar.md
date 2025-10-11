@@ -12,11 +12,11 @@
   * [5. Documentación de Código](5.Documentacion-de-codigo.md)
 
 * **🔌 API & Servicios**
-  * [6. API y Servicios](6.Api-y-Servicios.md)
+  * [6. API y Servicios](6.Api-Servicios.md)
 
 * **📝 Versiones & Migraciones**
   * [7. Historial de Versiones](7.Historial-de-Versiones.md)
-  * [8. Migración a Expo Go](8.Migracion-a-Expo-Go.md)
+  * [8. Migración a Expo Go](8.Migracion-Expo-Go-Guia-completa.md)
 
 * **🔗 Enlaces**
   * [📦 GitHub](https://github.com/FERNANDOANGEL202123767/ClevCloud-app)
